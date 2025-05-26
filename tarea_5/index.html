@@ -1,132 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejemplo BEM y Flexbox</title>
-  <link rel="stylesheet" href="index.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ejemplo BEM y Flexbox - Secciones Aisladas</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
 
-  <!-- Sección 1: Tarjetas horizontales -->
-  <section class="cards">
-    <div class="cards__item">
-      <h2 class="cards__title">Tarjeta 1</h2>
-      <p class="cards__description">Descripción de la tarjeta 1.</p>
-     </div>
-    <div class="cards__item">
-      <h2 class="cards__title">Tarjeta 2</h2>
-      <p class="cards__description">Descripción de la tarjeta 2.</p>
+  <!-- Seccion 1 -->
+  <section class="section1">
+    <div class="section1__item">Item 1</div>
+    <div class="section1__item">Item 2</div>
+    <div class="section1__item">Item 3</div>
+    <div class="section1__item">Item 4</div>
+    <div class="section1__item">Item 5</div>
+  </section>
+
+  <!-- Seccion 2 -->
+  <section class="section2">
+    <div class="section2__card">
+      <h2 class="section2__title">Tarjeta 1</h2>
+      <p class="section2__description">Descripción de la tarjeta 1.</p>
     </div>
-    <div class="cards__item">
-      <h2 class="cards__title">Tarjeta 3</h2>
-      <p class="cards__description">Descripción de la tarjeta 3.</p>
-     </div>
-    <div class="cards__item">
-      <h2 class="cards__title">Tarjeta 4</h2>
-      <p class="cards__description">Descripción de la tarjeta 4.</p>
+    <div class="section2__card">
+      <h2 class="section2__title">Tarjeta 2</h2>
+      <p class="section2__description">Descripción de la tarjeta 2.</p>
     </div>
-    <div class="cards__item">
-      <h2 class="cards__title">Tarjeta 5</h2>
-      <p class="cards__description">Descripción de la tarjeta 5.</p>
+    <div class="section2__card">
+      <h2 class="section2__title">Tarjeta 3</h2>
+      <p class="section2__description">Descripción de la tarjeta 3.</p>
+    </div>
+    <div class="section2__card">
+      <h2 class="section2__title">Tarjeta 4</h2>
+      <p class="section2__description">Descripción de la tarjeta 4.</p>
+    </div>
+    <div class="section2__card">
+      <h2 class="section2__title">Tarjeta 5</h2>
+      <p class="section2__description">Descripción de la tarjeta 5.</p>
     </div>
   </section>
 
-  <!-- Sección 2: Tarjetas horizontales -->
-  <section class="cards">
-    <div class="cards__item">
-      <h2 class="cards__title">Tarjeta 1</h2>
-      <p class="cards__description">Descripción de la tarjeta 1.</p>
-     </div>
-    <div class="cards__item">
-      <h2 class="cards__title">Tarjeta 2</h2>
-      <p class="cards__description">Descripción de la tarjeta 2.</p>
-    </div>
-    <div class="cards__item">
-      <h2 class="cards__title">Tarjeta 3</h2>
-      <p class="cards__description">Descripción de la tarjeta 3.</p>
-     </div>
-    <div class="cards__item">
-      <h2 class="cards__title">Tarjeta 4</h2>
-      <p class="cards__description">Descripción de la tarjeta 4.</p>
-    </div>
-    <div class="cards__item">
-      <h2 class="cards__title">Tarjeta 5</h2>
-      <p class="cards__description">Descripción de la tarjeta 5.</p>
-    </div>
+  <!-- Seccion 3 -->
+  <section class="section3">
+    <div class="section3__box section3__box--naranja"><h2>1</h2></div>
+    <div class="section3__box section3__box--rojo"><h2>2</h2></div>
+    <div class="section3__box section3__box--azul"><h2>3</h2></div>
+    <div class="section3__box section3__box--verde"><h2>4</h2></div>
+    <div class="section3__box section3__box--morado"><h2>5</h2></div>
   </section>
 
-  <!-- Sección 3: Grilla de cajas numeradas -->
-  <section class="productCover">
-    <div class="productCover__box productCover__box--naranja "><h2>1</h2></div>
-    <div class="productCover__box productCover__box--rojo "><h2>2</h2></div>
-    <div class="productCover__box productCover__box--azul "><h2>3</h2></div>
-    <div class="productCover__box productCover__box--verde"><h2>4</h2></div>
-    <div class="productCover__box productCover__box--morado"><h2>5</h2></div>
+  <!-- Seccion 4 -->
+  <section class="section4 section4--amarilla">
+    <div class="section4__box section4__box--h1"><h2>1</h2></div>
+    <div class="section4__box section4__box--h2"><h2>2</h2></div>
+    <div class="section4__box section4__box--h3"><h2>3</h2></div>
+    <div class="section4__box section4__box--h4"><h2>4</h2></div>
   </section>
 
-   <!-- Sección 4: Grilla de cajas numeradas -->
-  <section class="section section--amarilla">
-    <div class="section__box section__box--h1"><h2>1</h2></div>
-    <div class="section__box section__box--h2"><h2>2</h2></div>
-    <div class="section__box section__box--h3"><h2>3</h2></div>
-    <div class="section__box section__box--h4"><h2>4</h2></div>
+  <!-- Seccion 5 -->
+  <section class="section5 section5--azul">
+    <div class="section5__item">Item 4</div>
+    <div class="section5__item">Item 3</div>
+    <div class="section5__item">Item 2</div>
+    <div class="section5__item">Item 1</div>
   </section>
 
-
-<!-- Sección 5: item hacia abajo -->
-   <section class="section section--azul">
-    <div class="layout__item">Item 4</div>
-    <div class="layout__item">Item 3</div>
-    <div class="layout__item">Item 2</div>
-    <div class="layout__item">Item 1</div>
-  </section>
-
-    <!-- Sección 6: Tarjetas de super -->
-  <section class="cards">
-    <div class="cards__item5">
-      <h2 class="cards__title  visually-hidden">Tarjeta 1</h2>
-      <img src="img/Imagen1.jpg" alt="Limpiador Seven" class="cards__image">
-      <p class="cards__description">Limpiador Multiuso Seven Naranja 725 ml.</p>
-      <p class="cards__description--precio">L 58.45</p>
-      <button class="cards__button">Agregar</button>
-
-     </div>
-    <div class="cards__item5">
-      <h2 class="cards__title  visually-hidden">Tarjeta 2</h2>
-      <img src="img/Imagen2.jpg" alt="Limpiador Seven" class="cards__image">
-      <p class="cards__description">Detergente Liquido Seven Original 1050ML.</p>
-      <p class="cards__description--precio">L93.95</p>
-      <button class="cards__button">Agregar</button>
+  <!-- Seccion 6 -->
+  <section class="section6">
+    <div class="section6__card">
+      <h2 class="visually-hidden">Tarjeta 1</h2>
+      <img src="img/Imagen1.jpg" alt="Limpiador Seven" class="section6__image" />
+      <p class="section6__description">Limpiador Multiuso Seven Naranja 725 ml.</p>
+      <p class="section6__price">L 58.45</p>
+      <button class="section6__button">Agregar</button>
     </div>
-    <div class="cards__item5">
-      <h2 class="cards__title  visually-hidden">Tarjeta 3</h2>
-      <img src="img/Imagen3.jpg" alt="Limpiador Seven" class="cards__image">
-      <p class="cards__description">Betun Diamond Cafe 750 Gr.</p>
-      <p class="cards__description--precio">L35.05.</p>
-      <button class="cards__button">Agregar</button>
-     </div>
-    <div class="cards__item5">
-      <h2 class="cards__title  visually-hidden">Tarjeta 4</h2>
-      <img src="img/Imagen4.jpg" alt="Limpiador Seven" class="cards__image">
-      <p class="cards__description">Paño El Contraste Limpiador Multiuso 5Un .</p>
-      <p class="cards__description--precio">L41.95</p>
-      <button class="cards__button">Agregar</button>
+    <div class="section6__card">
+      <h2 class="visually-hidden">Tarjeta 2</h2>
+      <img src="img/Imagen2.jpg" alt="Limpiador Seven" class="section6__image" />
+      <p class="section6__description">Detergente Liquido Seven Original 1050ML.</p>
+      <p class="section6__price">L 93.95</p>
+      <button class="section6__button">Agregar</button>
     </div>
-    <div class="cards__item5">
-      <h2 class="cards__title  visually-hidden">Tarjeta 5</h2>
-      <img src="img/Imagen5.jpg" alt="Limpiador Seven" class="cards__image">
-      <p class="cards__description">Repelente Aerosol Cutter Family 170Gr.</p>
-      <p class="cards__description--precio">L106.75</p>
-      <button class="cards__button">Agregar</button>
+    <div class="section6__card">
+      <h2 class="visually-hidden">Tarjeta 3</h2>
+      <img src="img/Imagen3.jpg" alt="Limpiador Seven" class="section6__image" />
+      <p class="section6__description">Betun Diamond Cafe 750 Gr.</p>
+      <p class="section6__price">L 35.05</p>
+      <button class="section6__button">Agregar</button>
     </div>
-     <div class="cards__item5">
-      <h2 class="cards__title  visually-hidden">Tarjeta 6</h2>
-      <img src="img/Imagen6.jpg" alt="Limpiador Seven" class="cards__image">
-      <p class="cards__description">Toalla De Papel Scott Absorb Doble Hoja 3 Rollos.</p>
-      <p class="cards__description--precio">L46.21</p>
-      <button class="cards__button">Agregar</button>
+    <div class="section6__card">
+      <h2 class="visually-hidden">Tarjeta 4</h2>
+      <img src="img/Imagen4.jpg" alt="Limpiador Seven" class="section6__image" />
+      <p class="section6__description">Paño El Contraste Limpiador Multiuso 5Un.</p>
+      <p class="section6__price">L 41.95</p>
+      <button class="section6__button">Agregar</button>
+    </div>
+    <div class="section6__card">
+      <h2 class="visually-hidden">Tarjeta 5</h2>
+      <img src="img/Imagen5.jpg" alt="Limpiador Seven" class="section6__image" />
+      <p class="section6__description">Repelente Aerosol Cutter Family 170Gr.</p>
+      <p class="section6__price">L 106.75</p>
+      <button class="section6__button">Agregar</button>
+    </div>
+    <div class="section6__card">
+      <h2 class="visually-hidden">Tarjeta 6</h2>
+      <img src="img/Imagen6.jpg" alt="Limpiador Seven" class="section6__image" />
+      <p class="section6__description">Toalla De Papel Scott Absorb Doble Hoja 3 Rollos.</p>
+      <p class="section6__price">L 46.21</p>
+      <button class="section6__button">Agregar</button>
     </div>
   </section>
 
