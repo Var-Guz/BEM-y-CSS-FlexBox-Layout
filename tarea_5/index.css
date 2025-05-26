@@ -15,10 +15,11 @@ body {
 =========================== */
 .section1 {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  width: 100%;
-  max-width: 800px;
+  max-width: 600px;
+  margin: auto;
 
 }
 
@@ -32,6 +33,23 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   
 }
+
+.section1__item--empty {
+  width: 120px;
+  height: 0;
+  pointer-events: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.section1__item--4 { order: 1; }
+.section1__item--empty { order: 2; }
+.section1__item--5 { order: 3; }
+
+.section1__item--1 { order: 4; }
+.section1__item--2 { order: 5; }
+.section1__item--3 { order: 6; }
 
 /* ==========================
    Seccion 2 - Tarjetas horizontales
