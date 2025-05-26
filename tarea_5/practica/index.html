@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="recrear cajita."> 
+    <title>pregunta 16</title>
+  </head>
+  <body>
+  <div class="card">
+  <div class="card__item card__item--selected">
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dan Rowden" class="card__avatar" />
+    <div class="card__info">
+      <p class="card__name">Dan Rowden</p>
+      <p class="card__username">@dr</p>
+    </div>
+    <div class="card__check">✔</div>
+  </div>
+
+  <div class="card__item">
+    <img src="https://placekitten.com/100/100" alt="Product Hunt" class="card__avatar" />
+    <div class="card__info">
+      <p class="card__name">Product Hunt</p>
+      <p class="card__username">@Product Hunt</p>
+    </div>
+    <div class="card__check">
+      <input type="checkbox" />
+    </div>
+  </div>
+
+  <div class="card__item">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Janel" class="card__avatar" />
+    <div class="card__info">
+      <p class="card__name">Janel</p>
+      <p class="card__username">@JanelSGM</p>
+    </div>
+    <div class="card__check">
+      <input type="checkbox" />
+    </div>
+  </div>
+</div>
+
+<style>
+.card {
+  width: 320px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.card__item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+}
+
+.card__item:last-child {
+  margin-bottom: 0;
+}
+
+.card__item--selected {
+  background: #3c6fef;
+  color: white;
+}
+
+.card__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.card__info {
+  flex: 1;
+}
+
+.card__name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.card__username {
+  font-size: 0.9em;
+  margin: 0;
+  color: inherit;
+}
+
+.card__check {
+  margin-left: auto;
+  font-size: 1.2em;
+}
+
+.card__item--selected .card__check {
+  color: white;
+}
+</style>
+
+
+  </body>
+</html>
+
+
