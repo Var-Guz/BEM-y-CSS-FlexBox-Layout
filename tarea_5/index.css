@@ -19,6 +19,7 @@ body {
   justify-content: center;
   width: 100%;
   max-width: 800px;
+
 }
 
 .section1__item {
@@ -29,40 +30,49 @@ body {
   width: 120px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  font-weight: bold;
+  
 }
 
 /* ==========================
    Seccion 2 - Tarjetas horizontales
 =========================== */
 .section2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+ display: flex;
+ flex-wrap: wrap;
   gap: 20px;
-  width: 100%;
-  max-width: 900px;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
 }
 
-.section2__card {
-  background-color: #ffffff;
+.section2__item {
+  background-color: #e0e0e0;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
-  width: 150px;
+  width: 120px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
 }
 
-.section2__title {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+.section2__item--empty {
+  width: 120px;
+  height: 0;
+  pointer-events: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-.section2__description {
-  font-size: 14px;
-  color: #555;
-}
+.section2__item--5 { order: 1; }
+.section2__item--empty { order: 2; }
+.section2__item--4 { order: 3; }
+
+.section2__item--3 { order: 4; }
+.section2__item--2 { order: 5; }
+.section2__item--1 { order: 6; }
+
 
 /* ==========================
    Seccion 3 - Grilla de cajas numeradas
@@ -70,9 +80,9 @@ body {
 .section3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 0px;
   width: 100%;
-  max-width: 400px;
+  max-width: 0px;
   justify-content: center;
 }
 
@@ -188,7 +198,7 @@ body {
 }
 
 /* ==========================
-   Seccion 6 - Tarjetas de supermercado
+   Sección 6 - Tarjetas de supermercado
 =========================== */
 .section6 {
   display: flex;
