@@ -28,23 +28,23 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Sección 3 - Cajas numeradas */
+/* Seccion 3 */
 .productCover {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0px;
-  justify-content: center;
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0x;
+ 
 }
 
 .productCover__box {
   width: 100px;
-  height: 100px;
+   aspect-ratio: 1 / 1;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 .productCover__box--naranja {
@@ -59,13 +59,16 @@ body {
   background-color: #392de4;
 }
 
+.productCover__box--verde {
+  background-color: #30e42d;
+}
+
 .productCover__box--morado {
   background-color: #e616c6;
 }
 
-.productCover__box--verde {
-  background-color: #30e42d;
-}
+
+ 
 
 /* Sección 4 - Cajas baseline */
 /* Estilo base de la sección */
@@ -150,7 +153,13 @@ body {
     font-weight: bold;
     color: #b56235;
     margin-bottom: 10px;
-     text-align: left;
+    text-align: left;
+    width: 100%;
+}
+.cards__description {
+  font-size: 14px;
+  margin: 8px 0;
+  flex-grow: 1;
 }
 
 .cards__button {
@@ -171,9 +180,9 @@ body {
  
 .cards__image {
   width: 100%;
-  height: auto;
+  height: 120px;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
@@ -187,4 +196,18 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.cards__item5{
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+  justify-content: space-between;
 }
